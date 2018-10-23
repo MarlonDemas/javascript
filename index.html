@@ -5,10 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/main.js"></script>
     <title>Intro to JavaScript</title>
 </head>
 <body>
+    <div class="container">
+        <p id="text">Before the script...</p>
+        <button id="btn">What you doing?</button>
+    </div>
+    <!-- <script src="js/main.js"></script> -->
+    <script>
+        document.getElementById("btn").onclick = function getAlert() {
+            document.getElementById("text").innerHTML = "I'm learning JavaScript";
+            document.getElementById("text").style.fontSize = "25px";
+            document.getElementById("text").style.textAlign = "center";
+            document.getElementById("btn").style.display = "block";
+            document.getElementById("btn").style.margin = "auto";
+            document.getElementById("btn").onclick = function getAlert() {
+                document.getElementById("text").innerHTML = "No more button for you";
+                document.getElementById("text").style.fontSize = "50px";
+                document.getElementById("btn").style.display = "none";
+            }
+        }
+    </script>
+    <!-- <script src="js/alert.js"></script> -->
     
 </body>
 </html>
