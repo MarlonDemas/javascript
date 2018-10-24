@@ -26,3 +26,14 @@ https://marlondemas.github.io/javascript/index.html
 - git bash
 - github
 ```
+
+## Steps to creating a variable
+Step 1: var
+
+Step 2: variableName
+
+Step 3: assignment = operator
+
+Step 4: 'string'
+
+Step 5: alert,console
